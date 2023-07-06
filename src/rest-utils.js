@@ -6,7 +6,7 @@ const instance = axios.create({
     ? 
     'http://localhost:8000/api/vehicles' 
     :
-    'https://vehicle-map-server-eranyo.onrender.com/',
+    'https://vehicle-map-server-eranyo.onrender.com/api/vehicles',
 
     headers: {
       'Content-Type': 'application/json',
