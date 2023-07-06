@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import { VehiclesContext } from '../../Context/vehiclesContext';
 import Collapsible from '../CollapsibleCard/collapsible'
-import axios from 'axios';
+import instance from '../../rest-utils'
 import './style.css';
 
 const DetailsDisplay = () =>{
@@ -13,7 +13,7 @@ const DetailsDisplay = () =>{
 
     useEffect(() => {
         async function getData(){
-            const resp = await axios.post("http://localhost:8000/api/vehicles/polygon", {polygons})
+            const resp = await instance.post('polygon', {polygons})
             setMarkedVehicles(resp.data)
             }
             getData()
