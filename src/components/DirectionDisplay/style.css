@@ -1,0 +1,38 @@
+.button {
+    margin-right: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#go:hover {
+    background-color: #1a15b0;
+}
+
+#go:active {
+    background-color: #10066f;
+}
+
+#go {
+    color: #ffffff;
+    background-color: rgb(32, 32, 210);
+}
+
+#back:hover {
+    background-color: #929090;
+}
+
+#back:active {
+    background-color: #706e6e;
+}
+
+#back {
+    color: rgb(25, 25, 207);
+    background-color: #aeacac;
+}

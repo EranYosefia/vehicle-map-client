@@ -1,0 +1,52 @@
+.collapsible {
+    font-size: small;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.collapsible.open {
+    border: 1px solid #42a5f5;
+}
+
+.collapsible-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.collapsible-header:hover {
+    background-color: #ececec;
+}
+
+.collapsible-header h3 {
+    margin: 0;
+}
+
+.arrow {
+    font-family: 'FontAwesome';
+    font-size: 14px;
+}
+
+.arrow::before {
+    content: '\f078';
+    transition: transform 0.3s ease;
+}
+
+.arrow.up::before {
+    transform: rotate(180deg);
+}
+
+.collapsible-content {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

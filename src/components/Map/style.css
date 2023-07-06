@@ -1,0 +1,12 @@
+.content {
+    flex: 1;
+    padding: 4px;
+    border-radius: 0.5rem;
+    grid-area: content;
+    background-color: #f0f0f0;
+}
+
+.app {
+    height: 100%;
+    text-align: center;
+}
